@@ -254,6 +254,14 @@ p{
         grid-area: main;
         width: 100%;
     }
+    .media {
+    width: 500px;
+    height: 300px;
+    }
+    .mediaFlex{
+    display: flex;
+    justify-content: center;
+    }
 
     footer{
         grid-area: footer;
@@ -264,10 +272,7 @@ p{
     nav{
 
     }
-    .media {
-    width: 500px;
-    height: 300px;
-}
+    
 
     .imgDiseño{
         width: 150px;
@@ -342,14 +347,19 @@ p{
             grid-area: main;
             width: 100%;
         }
-
-        footer{
-            grid-area: footer;
-        }
         .media {
             width: 600px;
             height: 400px;
         }
+        .mediaFlex{
+            display: flex;
+            justify-content: center;
+        }
+
+        footer{
+            grid-area: footer;
+        }
+        
         nav{
             
                 }
