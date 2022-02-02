@@ -1,0 +1,332 @@
+/* Diseños Generales  */
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    
+} 
+        .titulo{
+            display: flex;
+            justify-content: center;
+        }
+        .formFlex{
+            display: flex;
+            justify-content: center;
+        }
+
+        img{
+            border: 2px solid #c8c8c8;
+        }
+
+        .logoPadre{
+            display: grid;
+            justify-content: center;
+        }
+
+        .logoHijo{
+            border: 1px solid black;
+            border-radius: 100%;
+        }
+
+        .imgFlex{
+            display: grid;
+            justify-content: center;
+        }
+
+
+        nav a:hover{
+            background-color: blueviolet;
+            color: #ffff;
+        }
+
+        nav{
+            background-color: #c8c8c8
+        }
+        
+        nav a { 
+            font-size: 75%;
+            border-radius: 5px;
+            background-color: rgb(155, 35, 37);
+            color: #FFFFFF;
+            text-decoration: none;
+            text-align: center;
+            padding-right:  5px;
+            margin-right:  10px;
+        }
+        
+        nav input{
+            margin-right: 5px;
+            border: 1px solid black;
+            border-radius: 10px;
+        }
+
+        footer{
+            text-align: center;
+            background-color: #c8c8c8;
+            height: 100px;
+            width: auto;
+                    
+
+        }
+
+
+
+/* SmartPhone */
+
+@media (max-width: 480px){
+    body{
+        height: 100vh;
+        background-color: #EAEAEA;
+    }
+    /* .border{
+        border:1px solid black;
+    } */
+    #gridAreas{
+        display: grid;
+        grid-template-areas: 
+        /* '1 columna 3 filas */
+        "header"    /* Fila 1 */
+        "main"    /* Fila 2 */
+        "footer"       /* Fila 3 */
+        ;
+        /* Dimensiones */
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto;
+    }
+
+    #navAreas{
+        display: grid;
+        grid-template-areas: 
+        "servicios diseño contacto search"
+        
+        ;
+        grid-template-columns: 15% 15% 15% auto;
+    }
+    #servicios{
+        grid-area: servicios;
+        width: 50px;
+
+    }
+    #diseños{
+        grid-area: diseño;
+        width: 50px;
+    }
+    #contacto{
+        grid-area: contacto;
+        width: 50px;
+    }
+    #search{
+        grid-area: search;
+        width: 70px;
+        justify-self: end;
+    }
+    #reclamos{
+        font-size: 75%;
+        border-radius: 5px;
+        background-color: rgb(155, 35, 37);
+        color: #FFFFFF;
+        text-decoration: none;
+        text-align: center;
+        padding: 5px;
+        margin: 5px;
+    }
+    
+
+    header{
+        grid-area: header;
+        background-color: #c8c8c8;
+    }
+
+    main{
+        grid-area: main;
+        width: 100%;
+    }
+
+    footer{
+        grid-area: footer;
+        width: 100%;
+        
+    }
+
+    nav{
+background-color: #c8c8c8
+    }
+}
+p{
+    width: 90%;
+    font-size: 90%;
+}
+.titulo{
+    font-size: 98%;
+}
+.media {
+    width: 300px;
+    height: 200px;
+}
+
+/* Mobile-Table */
+
+@media (min-width: 481px) and (max-width: 1023px) {
+    body{
+        height: 100vh;
+        background-color: #EAEAEA;
+    }
+    /* .border{
+        border:1px solid black;
+    } */
+    #gridAreas{
+        display: grid;
+        grid-template-areas: 
+        /* '1 columna 3 filas */
+        "header"    /* Fila 1 */
+        "main"    /* Fila 2 */
+        "footer"       /* Fila 3 */
+        ;
+        /* Dimensiones */
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto;
+    }
+
+    #navAreas{
+        display: grid;
+        grid-template-areas: 
+        "servicios diseño contacto search"
+        ;
+        grid-template-columns: 13% 12% 12% auto;
+        
+    }
+    #servicios{
+        grid-area: servicios;
+        
+        
+    }
+    #diseños{
+        grid-area: diseño;
+        
+    }
+    #contacto{
+        grid-area: contacto;
+        
+    }
+    #search{
+        grid-area: search;
+        justify-self: end;
+    }
+    #reclamos{
+        font-size: 75%;
+        border-radius: 5px;
+        background-color: rgb(155, 35, 37);
+        color: #FFFFFF;
+        text-decoration: none;
+        text-align: center;
+        padding: 5px;
+        margin: 5px;
+    }
+    
+    header{
+        grid-area: header;
+        background-color: #c8c8c8;
+    }
+
+    main{
+        grid-area: main;
+    }
+
+    footer{
+        grid-area: footer;
+    }
+
+    nav{
+background-color: #c8c8c8
+    }
+    .media {
+    width: 500px;
+    height: 300px;
+}
+
+    .imgDiseño{
+        width: 150px;
+        height: 150px;
+    }
+}
+
+
+
+/* Desktop */
+
+@media (min-width: 1024px){
+        body{
+            height: 100vh;
+            background-color: #EAEAEA;
+        
+        }
+        /* .border{
+            border:1px solid black;
+        } */
+        #gridAreas{
+            display: grid;
+            grid-template-areas: 
+            /* '1 columna 3 filas */
+            "header"    /* Fila 1 */
+            "main"    /* Fila 2 */
+            "footer"       /* Fila 3 */
+            ;
+            /* Dimensiones */
+            grid-template-columns: auto;
+            grid-template-rows: auto auto auto;
+        }
+
+        #navAreas{
+            display: grid;
+            grid-template-areas: 
+            "servicios diseño contacto search"
+            ;
+            grid-template-columns: 10% 10% 10% auto;
+            
+        }
+        #servicios{
+            grid-area: servicios;
+        }
+        #diseños{
+            grid-area: diseño;
+        }
+        #contacto{
+            grid-area: contacto;
+        }
+        #search{
+            grid-area: search;
+            justify-self: end;
+        }
+        #reclamos{
+            font-size: 75%;
+            border-radius: 5px;
+            background-color: rgb(155, 35, 37);
+            color: #FFFFFF;
+            text-decoration: none;
+            text-align: center;
+            padding: 5px;
+            margin: 5px;
+        }
+
+        header{
+            grid-area: header;
+            background-color: #c8c8c8;
+        }
+
+        main{
+            grid-area: main;
+            width: 100%;
+        }
+
+        footer{
+            grid-area: footer;
+        }
+        .media {
+            width: 600px;
+            height: 400px;
+        }
+        nav{
+            background-color: #c8c8c8
+                }
+
+}
